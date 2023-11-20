@@ -81,8 +81,8 @@ namespace VotingSystem {
 
 		public:bool getVote();
 
-		public: String^ getVoteFName();
-		public: String^ getVoteLName();
+		public:String^ getVoteFName();
+		public:String^ getVoteLName();
 		public:String^ getParty();
 		
 

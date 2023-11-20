@@ -6,6 +6,11 @@ bool VotingSystem::login::getRegisterDeision() {
 	return switchToRegister;
 }
 
+bool VotingSystem::login::getAdminLogin()
+{
+	return adminLogin;
+}
+
 int VotingSystem::login::getVoterID()
 {
 	return user.getId();

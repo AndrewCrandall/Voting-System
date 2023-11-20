@@ -121,15 +121,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="adminNavigation.cpp" />
+    <ClCompile Include="candidate.cpp" />
+    <ClCompile Include="candidateAdd.cpp" />
+    <ClCompile Include="candidateRemove.cpp" />
     <ClCompile Include="login.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="navigation.cpp" />
     <ClCompile Include="registration.cpp" />
     <ClCompile Include="status.cpp" />
     <ClCompile Include="vote.cpp" />
+    <ClCompile Include="voteCount.cpp" />
     <ClCompile Include="voter.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="adminNavigation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="candidate.h" />
+    <ClInclude Include="candidateAdd.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="candidateRemove.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="login.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -145,9 +160,21 @@
     <ClInclude Include="vote.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="voteCount.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="voter.h" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="adminNavigation.resx">
+      <DependentUpon>adminNavigation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="candidateAdd.resx">
+      <DependentUpon>candidateAdd.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="candidateRemove.resx">
+      <DependentUpon>candidateRemove.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.h</DependentUpon>
     </EmbeddedResource>
@@ -157,8 +184,14 @@
     <EmbeddedResource Include="registration.resx">
       <DependentUpon>registration.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="status.resx">
+      <DependentUpon>status.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="vote.resx">
       <DependentUpon>vote.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voteCount.resx">
+      <DependentUpon>voteCount.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

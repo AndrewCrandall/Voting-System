@@ -260,6 +260,7 @@ namespace VotingSystem {
 
 
 				//ADDITION OF FINGERPRINT CODE
+				// don't forget to reassign 'fingerprint'
 
 				//Pass By Values
 				command.Parameters->AddWithValue("@firstName", fName);

@@ -36,6 +36,21 @@
     <ClCompile Include="voter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="adminNavigation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candidateAdd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candidate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voteCount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="candidateRemove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="login.h">
@@ -54,6 +69,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="voter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="adminNavigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="candidateAdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="candidate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="voteCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="candidateRemove.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

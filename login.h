@@ -21,14 +21,10 @@ namespace VotingSystem {
 		login(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: Add the constructor code here
-			//
 		}
 
 	protected:
 		/// <summary>
-		/// Clean up any resources being used.
 		/// </summary>
 		~login()
 		{
@@ -180,10 +176,12 @@ namespace VotingSystem {
 
 	// Variables
 		private: bool switchToRegister = false; 
+		private: bool adminLogin = false;
 		private: voter user;
 
 	// Functions
 		public: bool getRegisterDeision();
+		public: bool getAdminLogin();
 
 		public: int getVoterID();
 		public: int getVoterStatus();
@@ -199,11 +197,14 @@ private: System::Void LoginBtn_Click(System::Object^ sender, System::EventArgs^ 
 	String^ firstName = LFNameTxt->Text;
 	String^ lastName = LLNameTxt->Text;
 	String^ fingerprint = LPasswordTxt->Text;
+	String^ adminFName = "Admin";
+	String^ adminLName = "Admin";
+	String^ adminFPrint = "test";
 
+	//To Do, add more input validation
 	if (firstName->Length <= 0 || lastName->Length <= 0) {
 		MessageBox::Show("You must enter all values! ", "Error ", MessageBoxButtons::OK, MessageBoxIcon::Error);
 	}
-	
 	try {
 		//conectionString variable for database
 		String^ connString = "Data Source=localhost;Initial Catalog=FingerPrintVoting;Integrated Security=True";
@@ -243,6 +244,10 @@ private: System::Void LoginBtn_Click(System::Object^ sender, System::EventArgs^ 
 			user.setLastName(tmpLast);
 			user.setPassword(tmpPass);
 			user.setVoteStatus(tmpVote);
+
+			if (user.getId() == 1) {
+				adminLogin = true;
+			}
 
 			this->Close();
 		}
